@@ -7,11 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".GetStartedActivity">
 
-    <!-- Logo -->
 
-    <!-- Login Button -->
-
-    <!-- Sign Up Button -->
 
     <ImageView
         android:id="@+id/logoImage"

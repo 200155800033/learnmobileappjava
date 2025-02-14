@@ -11,31 +11,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Eduapp"
+        tools:ignore="ExtraText"
         tools:targetApi="31">
         <activity
+            android:name=".QuizActivity"
+            android:exported="false" />
+        <!-- Activities to launch -->
+        <activity
+            android:name=".EbooksActivity"
+            android:exported="true" /> <!-- Set exported to true -->
+        <activity
+            android:name=".AllcourseActivity"
+            android:exported="true" /> <!-- Set exported to true -->
+        <activity
             android:name=".HomeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ForgetPasswordActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SignUpActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GetStartedActivity"
-            android:exported="false" />
-        <activity
-            android:name=".loginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".logActivity"
-            android:exported="false" />
-        <activity
-            android:name=".getstrtActivity"
-            android:exported="false" />
+            android:exported="false" /> <!-- Home activity should be false -->
+        <!-- MainActivity (Launcher Activity) -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -44,7 +35,19 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- Other activities (should stay false) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GetStartedActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -16,7 +16,7 @@ public class GetStartedActivity extends AppCompatActivity {
         Button loginButton = findViewById(R.id.loginButton);
         Button signUpButton = findViewById(R.id.signUpButton);
 
-        // Navigate to Login Page
+
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,7 +25,7 @@ public class GetStartedActivity extends AppCompatActivity {
             }
         });
 
-        // Navigate to Sign Up Page
+
         signUpButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
