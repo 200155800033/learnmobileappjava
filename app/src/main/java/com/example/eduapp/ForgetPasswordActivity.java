@@ -21,12 +21,11 @@ public class ForgetPasswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forget_password);
 
-        // Initialize UI components
         emailInput = findViewById(R.id.emailInput);
         resetPasswordButton = findViewById(R.id.resetPasswordButton);
         backToLogin = findViewById(R.id.backToLogin);
 
-        // Reset Password Button Click Event
+        // Reset Password
         resetPasswordButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,7 +39,7 @@ public class ForgetPasswordActivity extends AppCompatActivity {
             }
         });
 
-        // Back to Login Click Event
+        // Back to Login C
         backToLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -61,7 +61,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/logo"
         tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/signUpButton"
